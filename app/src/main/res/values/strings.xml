@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SuperMATH</string>
+    <string name="username_login"></string>
+    <string name="password_login"></string>
+    <string name="login_button">Log in</string>
+    <string name="name_register"></string>
+    <string name="username_register"></string>
+    <string name="password_register"></string>
+    <string name="password2_register"></string>
+    <string name="register_button">Register</string>
+    <string name="register_redirect1">Thank you for registering!</string>
+    <string name="register_redirect2">Please wait for the approval of your account.</string>
+    <!-- - - - - - - -->
+    <string name="viewLessons">View Lessons</string>
+    <string name="viewScores">View Scores</string>
+    <string name="directions">Directions: Choose the best answer.</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="DiagnosticTest">Diagnostic Test</string>
+    <string name="UnitTest">Unit Test</string>
+</resources>
