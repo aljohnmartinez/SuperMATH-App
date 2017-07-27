@@ -1,96 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4fc3f7"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.aj.supermath.MainActivity"
-    android:background="#4fc3f7">
+    tools:context="com.example.aj.supermath.MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
-                android:id="@+id/imageView"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/supermath"
-                android:layout_marginTop="50dp" />
+                android:contentDescription="@string/app_name"/>
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/usernameLoginField"
-                android:hint="Username"
-                android:text="@string/username_login"
-                android:gravity="center_horizontal"
-                android:allowUndo="false"
-                android:layout_above="@+id/passwordLoginField"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:singleLine="true" />
-
-            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/passwordLoginField"
-                android:hint="Password"
-                android:text="@string/password_login"
                 android:gravity="center_horizontal"
-                android:layout_centerVertical="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:singleLine="true" />
+                android:hint="@string/username"
+                android:maxLines="1"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/passwordLoginField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:text="" />
 
             <Button
+                android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/login_button"
-                android:id="@+id/loginButton"
-                android:onClick="logIn"
                 android:background="#0000ff"
-                android:textSize="16dp"
-                android:layout_below="@+id/passwordLoginField"
-                android:layout_centerHorizontal="true"
                 android:ellipsize="start"
-                android:textColor="#ffffff" />
+                android:onClick="logIn"
+                android:text="@string/login_button"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/registerLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/register_button"
-                android:id="@+id/registerLink"
-                android:textSize="16dp"
-                android:onClick="register"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
                 android:linksClickable="false"
                 android:longClickable="false"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp" />
+                android:onClick="register"
+                android:text="@string/register_button"
+                android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+</LinearLayout>

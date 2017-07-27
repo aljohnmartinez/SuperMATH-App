@@ -10,6 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,47 +18,37 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Register"
+        <activity
+            android:name=".Register"
             android:label="Register"
-            android:parentActivityName=".MainActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"></meta-data>
-        </activity>
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ViewScores"
+            android:label="Scores"
+            android:parentActivityName=".StudentHome" />
+
+        <activity
+            android:name=".TopicList"
+            android:parentActivityName=".StudentHome" />
+        <activity
+            android:name=".LessonsList"
+            android:parentActivityName=".TopicList" />
+
+        <activity
+            android:name=".LessonProper"
+            android:parentActivityName=".LessonsList" />
+
+        <activity
+            android:name=".DiagnosticActivity"
+            android:label="Diagnostic Test" />
+
+        <activity
+            android:name=".UnitTestActivity"
+            android:label="Unit Test" />
 
         <activity android:name=".RegisterRedirect" />
-
         <activity android:name=".StudentHome" />
-
-        <activity android:name=".ViewScores"
-            android:label="Scores"
-            android:parentActivityName=".StudentHome">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".StudentHome"></meta-data>
-        </activity>
-
-        <activity android:name=".TopicList"
-            android:parentActivityName=".StudentHome">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".StudentHome"></meta-data>
-        </activity>
-
-        <activity android:name=".LessonsList"
-            android:parentActivityName=".TopicList">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TopicList"></meta-data>
-        </activity>
-
-        <activity android:name=".LessonProper"
-            android:parentActivityName=".LessonsList">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LessonsList"></meta-data>
-        </activity>
-
-        <activity android:name=".DiagnosticActivity"
-            android:label="Diagnostic Test" />
-        <activity android:name=".UnitTestActivity"
-            android:label="Unit Test" />
-        <activity android:name=".ShowScore"></activity>
+        <activity android:name=".ShowScore" />
     </application>
-
 </manifest>

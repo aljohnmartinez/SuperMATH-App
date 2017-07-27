@@ -10,24 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.aj.supermath.LessonsList">
 
-
     <TextView
+        android:id="@+id/TopicTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/TopicTitle"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#0000ff"
-        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_gravity="center"
         android:textAlignment="center"
-        android:layout_gravity="center" />
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/headerColor" />
 
     <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
         android:id="@+id/lessonOptions"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
 </LinearLayout>

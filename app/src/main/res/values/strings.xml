@@ -1,21 +1,37 @@
 <resources>
     <string name="app_name">SuperMATH</string>
-    <string name="username_login"></string>
-    <string name="password_login"></string>
-    <string name="login_button">Log in</string>
-    <string name="name_register"></string>
-    <string name="username_register"></string>
-    <string name="password_register"></string>
-    <string name="password2_register"></string>
+    <string name="go_back">Return</string>
+
+    <!-- Log in -->
+    <string name="login_button">Log In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <!-- Register -->
     <string name="register_button">Register</string>
+    <string name="name">Name</string>
+    <string name="retype_password">Retype Password</string>
     <string name="register_redirect1">Thank you for registering!</string>
     <string name="register_redirect2">Please wait for the approval of your account.</string>
-    <!-- - - - - - - -->
-    <string name="viewLessons">View Lessons</string>
-    <string name="viewScores">View Scores</string>
+
+    <!-- Home -->
+    <string name="view_lessons">View Lessons</string>
+    <string name="view_scores">View Scores</string>
+    <string name="logout_button">Log Out</string>
+    <string name="your_score">Your Score</string>
+
+    <!-- List of Topics -->
+    <string name="topic_list_label">Table of Contents</string>
+
+    <!-- Diagnostic / Unit Test -->
     <string name="directions">Directions: Choose the best answer.</string>
-    <string name="next">Next</string>
     <string name="submit">Submit</string>
-    <string name="DiagnosticTest">Diagnostic Test</string>
-    <string name="UnitTest">Unit Test</string>
+    <string name="diagnostic_test">Diagnostic Test</string>
+    <string name="unit_test">Unit Test</string>
+
+    <!-- View Scores-->
+    <string name="scores">Scores</string>
+    <string name="topic">Topic</string>
+    <string name="diagnostic_score">Diagnostic Test Score</string>
+    <string name="unit_score">Unit Test Score</string>
 </resources>

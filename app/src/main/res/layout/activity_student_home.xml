@@ -12,75 +12,62 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView5" >
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
-                android:id="@+id/imageView"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
                 android:src="@drawable/supermath"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="50dp" />
+                android:contentDescription="@string/app_name"/>
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="50dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/viewLessons"
                     android:id="@+id/viewLessons"
-                    android:onClick="viewLessons"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="left|center"
-                    android:ellipsize="marquee"
                     style="@style/Widget.AppCompat.Button.Colored"
-                    android:textSize="@dimen/abc_text_size_medium_material" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center"
+                    android:ellipsize="marquee"
+                    android:onClick="viewLessons"
+                    android:text="@string/view_lessons"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/viewScores"
                     android:id="@+id/viewScores"
-                    android:onClick="viewScores"
-                    android:layout_below="@+id/viewLessons"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_gravity="center|right"
                     style="@style/Widget.AppCompat.Button.Colored"
-                    android:textSize="@dimen/abc_text_size_medium_material" />
-            </GridLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/WelcomeText"
-                android:layout_gravity="center_horizontal" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center"
+                    android:onClick="viewScores"
+                    android:text="@string/view_scores"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <Button
+                android:id="@+id/logoutButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Log Out"
-                android:id="@+id/logoutButton"
+                android:layout_gravity="center"
                 android:onClick="logout"
-                android:layout_below="@+id/viewScores"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_gravity="center" />
+                android:text="@string/logout_button" />
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

@@ -10,67 +10,53 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.aj.supermath.ShowScore">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView7" >
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/topicTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/headerColor" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/topicTitleView"
-                android:layout_above="@+id/typeTitleView"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:textAppearance="@android:style/TextAppearance.Large"
-                android:textColor="#0000ff"
-                android:layout_marginTop="20dp"
-                android:textAlignment="center" />
+        <TextView
+            android:id="@+id/typeTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/typeTitleView"
-                android:textSize="20sp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp" />
+        <TextView
+            android:id="@+id/yourScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="33dp"
+            android:text="@string/your_score"
+            android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="YOUR SCORE"
-                android:id="@+id/yourScore"
-                android:textSize="20dp"
-                android:layout_above="@+id/score"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="33dp"
-                android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#0000ff"
+            android:textSize="48sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/score"
-                android:textSize="48dp"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:textColor="#0000ff"
-                android:layout_gravity="center" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Back"
-                android:id="@+id/backButton"
-                android:layout_marginTop="35dp"
-                android:onClick="back"
-                android:layout_below="@+id/score"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center" />
-        </LinearLayout>
-    </ScrollView>
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:onClick="back"
+            android:text="@string/go_back" />
+    </LinearLayout>
 </LinearLayout>
